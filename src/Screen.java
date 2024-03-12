@@ -8,7 +8,6 @@ public class Screen {
         frame.setResizable(false);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         //TODO:: Set up icon image
-
         
 
     }
