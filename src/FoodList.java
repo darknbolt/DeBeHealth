@@ -1,11 +1,9 @@
 //String Adjustable Array
 public class FoodList {
     private Food[] list;
-    protected String[] listNames;
     private int position;
     public FoodList(){
         this.list = new Food[0];
-        this.listNames = new String[0];
         this.position = -1;
     }
     public void add(Food food){
@@ -33,5 +31,12 @@ public class FoodList {
         for(int i = 0; i < list.length; ++i){
             System.out.println(list[i].getName());
         }
+    }
+    public String[] getNameList(){
+        String[] nameList = new String[list.length];
+        for(int i = 0; i < nameList.length; ++i){
+            nameList[i] = list[i].getName();
+        }
+        return nameList;
     }
 }
